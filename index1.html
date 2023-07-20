@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodeHim">
+    <title>JavaScript Vanilla Shopping Cart Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+	<!-- Demo CSS (No need to include it into your project) -->
+	<link rel="stylesheet" href="css/demo.css">
+  
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="About us.html">About</a></li>
+        <li><a href="Our Products.html">Our Products</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+    <b>
+      <div class="domain">AF Holders</div>
+    </b>
+ 
+  
+
+ <main>
+     <!-- Start DEMO HTML (Use the following code into your project)-->
+<div class="cart-modal-overlay">
+    <div class="cart-modal">
+      <i id="close-btn" class="fas fa-times"></i>
+        <h1 class="cart-is-empty">Cart is empty</h1>
+      
+        <div class="product-rows">
+        </div>
+        <div class="total">
+          <h1 class="cart-total">TOTAL</h1>
+            <span class="total-price">$0</span>
+              <button class="purchase-btn">PURCHASE</button>
+        </div>
+      </div>
+</div>
+      
+<!--   end of cart modal -->
+  <div class="cart-btn">
+    <i id="cart" class="fas fa-shopping-cart"></i>
+      <span class ="cart-quantity">0</span>
+  </div>
+<!--  products  -->
+  <div class="items-container">
+    <div class="card-1 card">
+      <img class="product-image" src="image-1.webp" alt="">
+        <button class="add-to-cart">Add to cart</button>
+          <span class="product-price">$1395</span>
+    </div>
+    <div class="card-2 card">
+      <img class="product-image" src="image-2.webp" alt="">
+      <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">$1175</span>
+    </div>
+    <div class="card-3 card">
+      <img class="product-image" src="image-3.webp" alt="">
+        <button class="add-to-cart">Add to cart</button>
+          <span class="product-price">$1150</span>
+    </div>
+    <div class="card-4 card">
+      <img class="product-image" src="image-4.webp" alt="">
+         <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">$1575</span>
+    </div>
+    <div class="card-5 card">
+      <img class="product-image" src="image-5.webp" alt="">
+      <button class="add-to-cart">Add to cart</button>
+      <span class="product-price">$1230</span>
+    </div>
+  </div>
+  <div class="items-container">
+    <div class="card-6 card">
+      <img class="product-image" src="Crayola.png" alt="">
+      <button class="add-to-cart">Add to cart</button>
+      <span class="product-price">$50</span>
+    </div>
+    
+      <div class="card-7 card">
+        <img class="product-image" src="image-6.png" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">$25</span>
+      </div>
+      
+        <div class="card-8 card">
+          <img class="product-image" src="image-7.png" alt="">
+          <button class="add-to-cart">Add to cart</button>
+          <span class="product-price">$1000</span>
+        </div>
+       
+          <div class="card-9 card">
+            <img class="product-image" src="image-8.png" alt="">
+            <button class="add-to-cart">Add to cart</button>
+            <span class="product-price">$650</span>
+          </div>
+          
+            <div class="card-10 card">
+              <img class="product-image" src="image-9.png" alt="">
+              <button class="add-to-cart">Add to cart</button>
+              <span class="product-price">$120</span>
+            </div>
+  </div> 
+  <div class="items-container">
+    <div class="card-11 card">
+      <img class="product-image" src="image-11.png" alt="">
+      <button class="add-to-cart">Add to cart</button>
+      <span class="product-price">$30</span>
+    </div>
+    <div class="card-12 card">
+      <img class="product-image" src="image-12.png" alt="">
+      <button class="add-to-cart">Add to cart</button>
+      <span class="product-price">$75</span>
+    </div>
+    <div class="card-13 card">
+      <img class="product-image" src="image-13.png" alt="">
+      <button class="add-to-cart">Add to cart</button>
+      <span class="product-price">$2000</span>
+    </div>
+    <div class="card-14 card">
+      <img class="product-image" src="image-14.png" alt="">
+      <button class="add-to-cart">Add to cart</button>
+      <span class="product-price">$2500</span>
+    </div>
+    <div class="card-15 card">
+      <img class="product-image" src="image-15.png" alt="">
+      <button class="add-to-cart">Add to cart</button>
+      <span class="product-price">$7000</span>
+    </div>
+
+  </div>
+  <div class="items-container">
+    <div class="card-16 card">
+      <img class="product-image" src="image-16.png" alt="">
+      <button class="add-to-cart">Add to cart</button>
+      <span class="product-price">$10</span>
+    </div>
+    <div class="card-17 card">
+      <img class="product-image" src="image-17.png" alt="">
+      <button class="add-to-cart">Add to cart</button>
+      <span class="product-price">$15</span>
+    </div>
+    <div class="card-18 card">
+      <img class="product-image" src="image-18.png" alt="">
+      <button class="add-to-cart">Add to cart</button>
+      <span class="product-price">$30</span>
+    </div>
+    <div class="card-19 card">
+      <img class="product-image" src="image-19.png" alt="">
+      <button class="add-to-cart">Add to cart</button>
+      <span class="product-price">$475</span>
+    </div>
+    <div class="card-20 card">
+      <img class="product-image" src="image-20.png" alt="">
+      <button class="add-to-cart">Add to cart</button>
+      <span class="product-price">$999</span>
+    </div>
+
+  </div>
+   
+     <!-- END EDMO HTML (Happy Coding!)-->
+ </main>
+
+ <footer>
+  <h1 style="margin-top: -20px;">AF Holders</h1><br>
+  <p style="font-size: 20px;">AF Holders is a leading online retailer offering a wide<br> selection of different
+     categories products to customers worldwide.</p><br>
+  <p style="font-size: 20px; color: white;">Follow Us:</p>
+
+  <div style="margin-top: 10px; margin-left: 550px; display: flex;">
+    <img class="social-icon" src="facb.png">
+    <img class="social-icon" src="inst.png">
+    <img class="social-icon" src="tweet.png">
+  </div><br>
+
+  <b><p>&copy; 2023 AF Holders. All rights reserved.</b></p>
+</footer>
+      
+    
+  <script  src="script.js"></script>
+  </body>
+</html>
